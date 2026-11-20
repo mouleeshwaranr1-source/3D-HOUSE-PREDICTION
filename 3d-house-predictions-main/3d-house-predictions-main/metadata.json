@@ -1,6 +1,0 @@
-{
-  "name": "BUILDVISION AI",
-  "description": "Architectural planning, blueprint analysis, 3D house studio, MEP layout visualization, interior design, and construction cost analytics platform.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
