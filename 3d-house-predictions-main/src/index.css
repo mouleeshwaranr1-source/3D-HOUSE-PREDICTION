@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bv-bg-main: #FFFFFF;
+    --bv-bg-secondary: #F1F0EC;
+    --bv-bg-card: #FFFFFF;
+    --bv-blue-primary: #3049F5;
+    --bv-blue-secondary: #5369FF;
+    --bv-blue-arch: #172D9B;
+    --bv-blue-light: #EEF1FF;
+    --bv-text-primary: #171923;
+    --bv-text-secondary: #777B87;
+    --bv-border: #E5E6EB;
+    --bv-success: #249B67;
+    --bv-warning: #E8A13A;
+    --bv-error: #D94A50;
+  }
+
+  html, body {
+    background-color: #FFFFFF;
+    color: #171923;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle architectural blueprint grid background for drafting surfaces */
+.arch-drafting-grid {
+  background-color: #FFFFFF;
+  background-image:
+    linear-gradient(to right, rgba(23, 45, 155, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 45, 155, 0.045) 1px, transparent 1px),
+    linear-gradient(to right, rgba(23, 45, 155, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 45, 155, 0.09) 1px, transparent 1px);
+  background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
